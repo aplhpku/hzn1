@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/css/bootstrap.min.css" rel="stylesheet">
+    <title>Data Mobil</title>
+</head>
+<body>
+<h2>Data Mobil</h2>
+<div class="container">
+    <div class="row">
+<div class="col-md-12">
+    <form action="?" method="post" ,class="form-inline">
+        <!---tambahin koma di antara "post" & class-->
+        <div class="form-group">
+            <label for="nim">Kode mobil:</label>
+            <input type="text" class="form-control" name="nim" placeholder="Isikan Kode Mobil">
+        </div>
+        <div class="form-group">
+            <label for="nama">Nama mobil:</label>
+            <input type="text" class="form-control" name="nama" placeholder="Isikan Nama Mobil">
+        </div>
+        <div class="form-group">
+            <label>Jenis Mobil:</label>
+            <label class="radio-inline"><input type="radio" name="jeniskelamin" value="Laki-laki" checked>Minibus</label>
+            <label class="radio-inline"><input type="radio" name="jeniskelamin" value="Perempuan">Penumpang</label>
+        </div>
+        <div class="form-group">
+            <label>Merk mobil</label>
+            <select name="jurusan" class="form-control"> 
+                <option value="tyt">Toyota</option>
+                <option value="mts">Mitsubishi</option>
+                <option value="dhs">Daihatsu</option>
+                <option value="szk"selected="true">Suzuki</option>
+            </select>
+        </div>
+<div class="form-row">
+                    <div class="col-md-4">
+                        <button id="tooltipButton" data-toggle="tooltip" title="Tombol jika anda ingin mensubmit" name="submit" type="submit" class="btn btn-info btn-block">Simpan</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button id="tooltipButton" data-toggle="tooltip" title="Tombol jika anda ingin membatalkan" type="reset" class="btn btn-danger btn-block">Batal</button>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="index.html" class="btn btn-info btn-block">Kembali</a>
+                    </div>
+                </div>
+    </form>
+</div>
+</div>
+</div>
+
+<script src="css/js/jQuery v3.2.0.js"></script>
+<script src="css/js/bootstrap.min.js"></script>    
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/css/bootstrap.min.css" rel="stylesheet">
+    <title>Data Parkir</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-4">Data Parkir</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Perbaikan: Menghapus koma sebelum class dan menambahkan enctype untuk upload file -->
+                <form action="?" method="post" class="form-horizontal" enctype="multipart/form-data">
+                    
+                    <div class="form-group">
+                        <label for="nama_pemilik">Nama:</label>
+                        <input type="text" class="form-control" id="nama_pemilik" name="nim" placeholder="Ketik nama">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alamat">Alamat:</label>
+                        <input type="text" class="form-control" id="alamat" name="nama" placeholder="Isikan Alamat">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis kendaraan:</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="jeniskendaraan" id="jenis_motor" value="Motor" checked> Motor
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="jeniskendaraan" id="jenis_mobil" value="Mobil"> Mobil
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="plat_nomor">Nomor plat kendaraan:</label>
+                        <input type="text" class="form-control" id="plat_nomor" name="nama" placeholder="B XXXX ABC">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="merk">Merk Motor / Mobil</label>
+                        <select name="jurusan" id="merk" class="form-control"> 
+                            <option value="hda">Honda</option>
+                            <option value="ymh">Yamaha</option>
+                            <option value="kwsk">Kawasaki</option>
+                            <option value="szk" selected>Suzuki</option>
+                            <option value="tyt">Toyota</option>
+                            <option value="dhs">Daihatsu</option>
+                            <option value="mtsbs">Mitsubishi</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="detail_kendaraan">Detil kendaraan:</label>
+                        <input type="text" class="form-control" id="detail_kendaraan" name="nama" placeholder="Ex: Honda Beat">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tgl_masuk">Tanggal masuk parkir</label>
+                        <input type="date" class="form-control" id="tgl_masuk" name="lahir">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tgl_keluar">Tanggal keluar parkir</label>
+                        <input type="date" class="form-control" id="tgl_keluar" name="lahir">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nama_petugas">Nama petugas parkir:</label>
+                        <input type="text" class="form-control" id="nama_petugas" name="nama" placeholder="Nama Petugas">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="foto_kendaraan">Foto Kendaraan:</label>
+                        <input type="file" class="form-control" id="foto_kendaraan" name="foto_kendaraan" accept="image/*">
+                    </div>
+
+                    <div class="form-row mt-4">
+                        <div class="col-md-4">
+                            <button id="btnSimpan" data-toggle="tooltip" title="Simpan data" name="submit" type="submit" class="btn btn-info btn-block">Simpan</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button id="btnBatal" data-toggle="tooltip" title="Kosongkan form" type="reset" class="btn btn-danger btn-block">Batal</button>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="index.html" class="btn btn-secondary btn-block">Kembali</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="css/js/jQuery v3.2.0.js"></script>
+    <script src="css/js/bootstrap.min.js"></script>    
+    <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+</html>

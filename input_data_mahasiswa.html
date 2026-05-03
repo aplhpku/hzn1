@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/css/bootstrap.min.css" rel="stylesheet">
+    <title>IDM</title>
+</head>
+<body>
+<h2>Data Mahasiswa</h2>
+<div class="container">
+    <div class="row">
+<div class="col-md-12">
+    <form action="?" method="post" ,class="form-inline">
+        <!---tambahin koma di antara "post" & class-->
+        <div class="form-group">
+            <label for="nim">NIM</label>
+            <input type="text" class="form-control" name="nim" placeholder="Isikan NIM">
+        </div>
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" class="form-control" name="nama" placeholder="Isikan Nama Lengkap">
+        </div>
+        <div class="form-group">
+            <label for="nama">Tempat lahir</label>
+            <input type="text" class="form-control" name="nama" placeholder="Tempat lahir">
+        </div>
+
+        <div class="form-group">
+            <label for="nama">Tanggal lahir</label>
+            <input type="date" class="form-control" id="tlahir" name="lahir">
+        </div>
+
+        <div class="form-group">
+            <label>Jenis Kelamin</label>
+            <label class="radio-inline"><input type="radio" name="jeniskelamin" value="Laki-laki" checked>Laki-laki</label>
+            <label class="radio-inline"><input type="radio" name="jeniskelamin" value="Perempuan">Perempuan</label>
+        </div>
+        <div class="form-group">
+            <label>Jurusan</label>
+            <select name="jurusan" class="form-control"> 
+                <option value="ti">Teknik Informatika</option>
+                <option value="tm">Teknik Mesin</option>
+                <option value="te">Teknik Elektro</option>
+                <option value="ts">Teknik Sipil</option>
+                <option value="si" selected="true">Sistem Informasi</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <textarea name="alamat"class="form-control" placeholder="Isikan Alamat Lengkap"></textarea>
+        </div>
+<div class="form-row">
+                    <div class="col-md-4">
+                        <button id="tooltipButton" data-toggle="tooltip" title="Tombol jika anda ingin mensubmit" name="submit" type="submit" class="btn btn-info btn-block">Simpan</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button id="tooltipButton" data-toggle="tooltip" title="Tombol jika anda ingin membatalkan" type="reset" class="btn btn-danger btn-block">Batal</button>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="index.html" class="btn btn-info btn-block">Kembali</a>
+                    </div>
+                </div>
+    </form>
+</div>
+</div>
+</div>
+
+<script src="css/js/jQuery v3.2.0.js"></script>
+<script src="css/js/bootstrap.min.js"></script>    
+</body>
+</html>
